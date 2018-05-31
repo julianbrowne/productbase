@@ -1,0 +1,22 @@
+
+
+source: src
+destination: dist
+
+markdown: kramdown
+
+whitelist: []
+plugins:   []
+
+prose:
+  rooturl: src
+  ignore: [ 
+    "_data",
+    "_includes",
+    "_layouts",
+    "vendor",
+    "favicon.ico",
+    "_config.yml",
+    "Gemfile",
+    "Gemfile.lock"
+  ]

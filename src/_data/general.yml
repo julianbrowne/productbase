@@ -1,0 +1,14 @@
+
+contact_email: info@productbase.org.uk
+
+posts:
+  - product-thinking
+
+backgrounds:
+  people: bg1
+  clients: bg4
+  services: bg2
+  blog/index: bg6
+  about/about-us: bg5
+  about/contact: bg3
+  about/legal: bg1

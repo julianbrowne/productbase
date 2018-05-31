@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="productbase executive search">
+	<title>candidates | productbase</title>
+	
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<link href="/css/normalize.css" rel="stylesheet">
+
+<script src="/vendor/jquery-3.3.1/jquery.js"></script>
+
+<link  href="/vendor/bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet">
+<script src="/vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
+
+<link href="/css/style.css" rel="stylesheet">
+
+</head>
+<body id="productbase">
+	<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		
+			<a class="navbar-brand" href="/">
+				home
+			</a>
+		
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li>
+				<a href="/people">people</a>
+			</li>
+			<li>
+				<a href="/clients">clients</a>
+			</li>
+			<li>
+				<a href="/services">services</a>
+			</li>
+			<li>
+				<a href="/blog">blog</a>
+			</li>
+			<li class="dropdown">
+				<a href="/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					about
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="/about/about-us">about us</a></li>
+					<li><a href="/about/contact">contact</a></li>
+					<li><a href="/about/legal">legal</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div><!-- /.container-fluid -->
+</nav>
+
+<script type="text/javascript">
+	$(function() { 
+
+		var currHref = $(location).attr("pathname");
+
+		if (currHref.endsWith("/")) { 
+			currHref = currHref.substring(0, currHref.length - 1);
+		}
+
+		function hrefRoot(href) { 
+			return "/" + href.split("/")[1]; 
+		};
+
+		var pageRoot = hrefRoot(currHref);
+
+		$("nav.navbar li a").each(function() { 
+
+			var linkHref = $(this).attr("href");
+			var linkRoot = hrefRoot(linkHref);
+
+			console.log(linkRoot, pageRoot);
+
+			if(linkHref===currHref) { 
+				//$("nav.navbar").find("li.active").removeClass("active");
+				$(this).parent().addClass("active");
+			}
+			else { 
+				if(linkRoot===pageRoot) { 
+					//$("nav.navbar").find("li.active").removeClass("active");
+					$(this).parent().parent().parent().addClass("active");
+				}
+			}
+
+		});
+	});
+</script>
+
+	
+	
+	<div class="container with-background bg1 full-height">
+		<h1 id="product-people">Product People</h1>
+
+<p>We mostly secure candidates though our own referenced network, however we also recognise that great talent can exist anywhere. If you really get agile in your bones, operate beyond the frameworks and the methodologies, have experience of leading product management, devops, site reliability engineering or lean enterprise adoption then we’d love to <a href="/about/contact">hear from you</a>.</p>
+
+<p>We always treat any approaches in the strictest confidence and any information you share with us is not shared with other parties without your permission.</p>
+
+<p>We don’t post vacancies or run job ads as a rule so please understand if we are unable to get back to you immediately. When working on assignments for clients we are typically looking for a relatively narrow range experience and skills.</p>
+
+	</div>
+	<footer class="footer navbar-fixed-bottom">
+		<div class="container">
+			<p class="text-muted text-center">
+				
+&copy; productbase 
+
+<script>
+	var todaysDate = new Date();
+	var locale = "en-us";
+	var year = todaysDate.toLocaleString(locale, { year: "numeric" });
+	document.write(year);
+</script>
+
+			</p>
+		</div>
+	</footer>
+</body>
+</html>

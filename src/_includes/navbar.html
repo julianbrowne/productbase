@@ -1,0 +1,72 @@
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		{% if page.url != "/" %}
+			<a class="navbar-brand" href="/">
+				home
+			</a>
+		{% endif %}
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li>
+				<a href="/people">people</a>
+			</li>
+			<li>
+				<a href="/clients">clients</a>
+			</li>
+			<li>
+				<a href="/services">services</a>
+			</li>
+			<li>
+				<a href="/blog">blog</a>
+			</li>
+			<li class="dropdown">
+				<a href="/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					about
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="/about/about-us">about us</a></li>
+					<li><a href="/about/contact">contact</a></li>
+					<li><a href="/about/legal">legal</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div><!-- /.container-fluid -->
+</nav>
+
+<script type="text/javascript">
+	$(function() { 
+
+		var currHref = $(location).attr("pathname");
+
+		if (currHref.endsWith("/")) { 
+			currHref = currHref.substring(0, currHref.length - 1);
+		}
+
+		function hrefRoot(href) { 
+			return "/" + href.split("/")[1]; 
+		};
+
+		var pageRoot = hrefRoot(currHref);
+
+		$("nav.navbar li a").each(function() { 
+
+			var linkHref = $(this).attr("href");
+			var linkRoot = hrefRoot(linkHref);
+
+			console.log(linkRoot, pageRoot);
+
+			if(linkHref===currHref) { 
+				//$("nav.navbar").find("li.active").removeClass("active");
+				$(this).parent().addClass("active");
+			}
+			else { 
+				if(linkRoot===pageRoot) { 
+					//$("nav.navbar").find("li.active").removeClass("active");
+					$(this).parent().parent().parent().addClass("active");
+				}
+			}
+
+		});
+	});
+</script>

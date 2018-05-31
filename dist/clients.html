@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="productbase executive search">
+	<title>clients | productbase</title>
+	
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<link href="/css/normalize.css" rel="stylesheet">
+
+<script src="/vendor/jquery-3.3.1/jquery.js"></script>
+
+<link  href="/vendor/bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet">
+<script src="/vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
+
+<link href="/css/style.css" rel="stylesheet">
+
+</head>
+<body id="productbase">
+	<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		
+			<a class="navbar-brand" href="/">
+				home
+			</a>
+		
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li>
+				<a href="/people">people</a>
+			</li>
+			<li>
+				<a href="/clients">clients</a>
+			</li>
+			<li>
+				<a href="/services">services</a>
+			</li>
+			<li>
+				<a href="/blog">blog</a>
+			</li>
+			<li class="dropdown">
+				<a href="/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					about
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="/about/about-us">about us</a></li>
+					<li><a href="/about/contact">contact</a></li>
+					<li><a href="/about/legal">legal</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div><!-- /.container-fluid -->
+</nav>
+
+<script type="text/javascript">
+	$(function() { 
+
+		var currHref = $(location).attr("pathname");
+
+		if (currHref.endsWith("/")) { 
+			currHref = currHref.substring(0, currHref.length - 1);
+		}
+
+		function hrefRoot(href) { 
+			return "/" + href.split("/")[1]; 
+		};
+
+		var pageRoot = hrefRoot(currHref);
+
+		$("nav.navbar li a").each(function() { 
+
+			var linkHref = $(this).attr("href");
+			var linkRoot = hrefRoot(linkHref);
+
+			console.log(linkRoot, pageRoot);
+
+			if(linkHref===currHref) { 
+				//$("nav.navbar").find("li.active").removeClass("active");
+				$(this).parent().addClass("active");
+			}
+			else { 
+				if(linkRoot===pageRoot) { 
+					//$("nav.navbar").find("li.active").removeClass("active");
+					$(this).parent().parent().parent().addClass("active");
+				}
+			}
+
+		});
+	});
+</script>
+
+	
+	
+	<div class="container with-background bg4 full-height">
+		<h1 id="clients">Clients</h1>
+
+<h2 id="clientone">ClientOne</h2>
+
+<p><img src="http://via.placeholder.com/150x150" alt="image" /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet elit pretium malesuada sodales. Integer sed dui et diam lacinia vestibulum a at sapien. Praesent maximus semper nisi, vitae facilisis nisl pretium sed. Suspendisse sit amet nulla malesuada, scelerisque quam nec, aliquet quam. Suspendisse volutpat gravida tempus. Duis erat ligula, blandit sit amet orci id, iaculis porttitor dolor. Nunc mollis augue vel facilisis imperdiet.</p>
+
+<h2 id="clienttwo">ClientTwo</h2>
+
+<p><img src="http://via.placeholder.com/150x150" alt="image" /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet elit pretium malesuada sodales. Integer sed dui et diam lacinia vestibulum a at sapien. Praesent maximus semper nisi, vitae facilisis nisl pretium sed. Suspendisse sit amet nulla malesuada, scelerisque quam nec, aliquet quam. Suspendisse volutpat gravida tempus. Duis erat ligula, blandit sit amet orci id, iaculis porttitor dolor. Nunc mollis augue vel facilisis imperdiet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+
+<h2 id="clienttwo-1">ClientTwo</h2>
+
+<p><img src="http://via.placeholder.com/150x150" alt="image" /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet elit pretium malesuada sodales. Integer sed dui et diam lacinia vestibulum a at sapien. Praesent maximus semper nisi, vitae facilisis nisl pretium sed. Suspendisse sit amet nulla malesuada, scelerisque quam nec, aliquet quam. Suspendisse volutpat gravida tempus. Duis erat ligula, blandit sit amet orci id, iaculis porttitor dolor. Nunc mollis augue vel facilisis imperdiet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In fermentum dolor magna. Nam ut eleifend nisi, quis vestibulum nisl. Duis semper ante nec aliquam faucibus. Nunc non magna sollicitudin, porttitor sapien tincidunt, elementum erat.</p>
+
+	</div>
+	<footer class="footer navbar-fixed-bottom">
+		<div class="container">
+			<p class="text-muted text-center">
+				
+&copy; productbase 
+
+<script>
+	var todaysDate = new Date();
+	var locale = "en-us";
+	var year = todaysDate.toLocaleString(locale, { year: "numeric" });
+	document.write(year);
+</script>
+
+			</p>
+		</div>
+	</footer>
+</body>
+</html>

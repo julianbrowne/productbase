@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="productbase executive search">
+	<title>{{ page.title }} | productbase</title>
+	{% include assets.html %}
+</head>
+<body id="productbase">
+	{% include navbar.html %}
+	{% assign page_name = page.path | remove: ".md" %}
+	{% assign background = site.data.general.backgrounds[page_name] %}
+	<div class="container with-background {{background}} full-height">
+		{{ content }}
+	</div>
+	<footer class="footer navbar-fixed-bottom">
+		<div class="container">
+			<p class="text-muted text-center">
+				{% include footer.html %}
+			</p>
+		</div>
+	</footer>
+</body>
+</html>
