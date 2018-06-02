@@ -10,7 +10,7 @@
 	border-color: transparent;
 }
 
-.productbase-logo { 
+#productbase h1.productbase-logo { 
 	font-size: 60px;
 	margin-left: 50px;
 	padding-bottom: 20px;
@@ -24,7 +24,7 @@
 }
 
 #productbase .container p img { 
-	float:left;
+	float: left;
 	height: 150px;
 	width: 150px;
 	margin: 0 20px 0 0;	
@@ -38,6 +38,12 @@
 
 #productbase h2 { 
 	font-size: 22px;
+	font-weight: bolder;
+	padding-bottom: 10px;
+}
+
+#productbase h3 { 
+	font-size: 18px;
 	font-weight: bolder;
 	padding-bottom: 10px;
 }
@@ -94,21 +100,6 @@
 	min-height: 600px;
 }
 
-#productbase ul.nav > li > a { 
-	border-radius: 25px;
-	width: 120px;
-	text-align: center;
-	font-size: 16px;
-}
-
-#productbase ul.nav > li > a:hover { 
-	background: #e1e1e1;
-	border-radius: 25px;
-	width: 120px;
-	text-align: center;
-	font-size: 16px;
-}
-
 #productbase .active > a { 
 	background: #205013;
 	color: #FFFFFF;
@@ -125,7 +116,26 @@
 }
 
 /**
- *	list items
+ *	Navbar menu items
+**/
+
+#productbase ul.nav > li > a { 
+	border-radius: 25px;
+	width: 120px;
+	text-align: center;
+	font-size: 16px;
+}
+
+#productbase ul.nav > li > a:hover { 
+	background: #e1e1e1;
+}
+
+#productbase ul.nav > li.dropdown:hover > ul.dropdown-menu { 
+    display: block;    
+}
+
+/**
+ *	Generic page list items
 **/
 
 #productbase div.container ul { 
@@ -154,4 +164,81 @@
 
 #productbase div.container ul li a:visited { 
 	color: #000000;
+}
+
+/**
+ *	Media queries
+**/
+
+@media (max-width: 1024px) { 
+
+	/* remove background images */
+
+	#productbase .with-background { 
+		background-image: none;
+	}
+
+	/* make fonts normal size */
+
+	#productbase h1 { 
+		font-size: 20px;
+		font-weight: bold;
+		padding-bottom: 10px;
+	}
+
+	#productbase h2 { 
+		font-size: 18px;
+		font-weight: bold;
+		padding-bottom: 5px;
+	}
+
+	#productbase h3 { 
+		font-size: 16px;
+		font-weight: bold;
+		padding-bottom: 5px;
+	}
+
+	#productbase p,
+	#productbase div.container ul li,
+	#productbase div.container ul li a { 
+		font-size: inherit;
+		line-height: inherit;
+		vertical-align: middle;
+	}
+
+	/* shrink images */
+
+	#productbase .container p img { 
+		height: 75px;
+		width: 75px;
+		margin: 0 10px 0 0;
+	}
+
+	/* reduce left indent of text */
+
+	#productbase .container.with-background { 
+		padding-right: 5px;
+	}
+
+	/* make home logo smaller */
+
+	#productbase h1.productbase-logo { 
+		font-size: 20px;
+		margin-left: 10px;
+	}
+
+	/* centre the nav menu items */
+
+	#productbase ul.nav > li > a,
+	#productbase .dropdown-menu > li > a { 
+		text-align: center;
+		width: 100%;
+	}
+
+	/* hide the fixed footer  */
+
+	footer { 
+		display: none;
+	}
+
 }

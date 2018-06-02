@@ -16,9 +16,9 @@ same people, have cross dependencies on each other, all want to go into
 production at around the same time, fight each other for limited capital investment
 budgets and so on.
 
-### Projects are Dead; Long live Products
+## Projects are Dead; Long live Products
 
-Organising a delivery portfolio around **products** instead of project has
+Organising a delivery portfolio around **products** instead of _[projects](https://hackernoon.com/thinking-beyond-projects-71998e2524e7)_ has
 major benefits:
 
 *	**No Dependencies** - the delivery team scope is the whole product, i.e. the
@@ -43,7 +43,7 @@ creating funding models for them without the usual end of year crunch and squabb
 work out which projects to fund. Strategy becomes easier too because it has to center around
 long term targets, the customers and the products they interact with.
 
-### Product People
+## Product People
 
 Roles in product teams are still agile but holistically so. Product developers, analysts, and owners
 need to think in very customer-first terms, build requirements around tested hypotheses and

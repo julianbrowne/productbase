@@ -35,3 +35,8 @@
 	color: #000000;
 }
 
+@media (max-width: 1024px) { 
+	#productbase.blog div.container ul li { 
+		font-size: inherit;
+	}
+}
