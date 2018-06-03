@@ -4,6 +4,7 @@
 	height: 100%; 
 	margin: 10px; 
 	padding: 10px;
+	overflow-y: scroll;
 }
 
 #productbase .navbar-default { 
@@ -11,9 +12,14 @@
 }
 
 #productbase h1.productbase-logo { 
+	font-weight: normal;
 	font-size: 60px;
 	margin-left: 50px;
 	padding-bottom: 20px;
+}
+
+#productbase h1.productbase-logo strong { 
+	font-weight: bolder;
 }
 
 #productbase p { 
@@ -130,8 +136,12 @@
 	background: #e1e1e1;
 }
 
-#productbase ul.nav > li.dropdown:hover > ul.dropdown-menu { 
-    display: block;    
+/* about nav hover only on desktop */
+
+@media (min-width: 1024px) { 
+	#productbase ul.nav > li.dropdown:hover > ul.dropdown-menu { 
+	    display: block;    
+	}
 }
 
 /**
