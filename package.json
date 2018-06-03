@@ -4,7 +4,7 @@
 	"description": "productbase web site",
 	"main": "index.html",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"minify": "minify.sh"
 	},
 	"repository": {
 		"type": "git",
@@ -18,6 +18,7 @@
 	"homepage": "https://github.com/julianbrowne/productbase#readme",
 	"dependencies": {},
 	"devDependencies": {
-		"uglify-js": "3.4.0"
+		"uglify-js": "^3.4.0",
+		"uglifycss": "0.0.29"
 	}
 }
