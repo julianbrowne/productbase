@@ -62,15 +62,11 @@
 			var linkHref = $(this).attr("href");
 			var linkRoot = hrefRoot(linkHref);
 
-			console.log(linkRoot, pageRoot);
-
 			if(linkHref===currHref) { 
-				//$("nav.navbar").find("li.active").removeClass("active");
 				$(this).parent().addClass("active");
 			}
 			else { 
 				if(linkRoot===pageRoot) { 
-					//$("nav.navbar").find("li.active").removeClass("active");
 					$(this).parent().parent().parent().addClass("active");
 				}
 			}
