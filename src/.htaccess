@@ -1,7 +1,8 @@
 
-RewriteCond %{REQUEST_URI} !\.(html|css|js|less|jpg|png|gif)$
-
 RewriteEngine On
-RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{3,4}
+
+RewriteCond %{REQUEST_URI} !\.(html|htm|css|js|less|jpg|jpeg|png|gif|ico|eot|svg|ttf|woff|woff2|map)$
+# RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{3,4}
 RewriteCond %{REQUEST_URI} !/$
+
 RewriteRule ^(.*)$ $1.html

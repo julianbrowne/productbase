@@ -9,7 +9,7 @@ The future of digital delivery is [product-based](/blog/product-thinking.html) t
 
 Smart organisations have been restructuring themselves around agile methods for some time. The next phase of lean adoption is product-first delivery, enabling giant leaps in capability as the confusion of an exclusively project-centered portfolio is left behind.
 
-Product organisations are agile, promote a devops or site-reliability culture, and invest their capital budgets in [products, not projects](https://www.thoughtworks.com/insights/blog/great-financial-services-companies-deliver-products-not-projects)
+Product organisations are agile, promote a devops or site-reliability culture, and invest their capital budgets in _products_, not projects.
 
 Productbase is an exclusive search organisation connected to the change makers in this new world. We curate a selective network of individuals who lead major programmes of modernisation and lean adoption. We provide just the right kind of product talent for fast growing tech businesses and large organisations who are looking to become agile or to take their agility to the next level.
 
