@@ -1,0 +1,100 @@
+
+/**
+ *	Navbar
+**/
+
+#productbase .navbar { 
+	color: #FFFFFF;
+	background-color: #324A5F;
+	border-width: 0;
+	border-radius: 0;
+}
+
+#productbase .navbar-right { 
+	float: right;
+	margin-right: -30px;
+}
+
+/**
+ *	Navbar menu items
+**/
+
+#productbase .navbar-default a.navbar-brand { 
+	color: #FFFFFF;
+}
+
+#productbase ul { 
+	margin: 0;
+}
+
+#productbase ul.nav > li > a { 
+	color: #FFFFFF;
+	border-radius: 10px;
+	width: 120px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 20px;
+	/*border-right: 1px solid #FFFFFF;*/
+}
+
+#productbase ul.nav > li > a:hover { 
+	color: #0C1821;
+	background: #e1e1e1;
+}
+
+#productbase ul.nav > li.active > a { 
+	color: #000000;
+	background: #CCC9DC;
+}
+
+#productbase .dropdown-menu > .active > a {
+	color: #FFFFFF;
+	background: #324A5F;
+}
+
+@media (min-width: 1024px) { 
+
+	/* about nav hover only on desktop */
+
+	#productbase ul.nav > li.dropdown:hover > ul.dropdown-menu { 
+	    display: block;    
+	}
+
+}
+
+@media (max-width: 1024px) { 
+
+	/* flip nav bar colours */
+
+	#productbase .navbar-default { 
+		color: #FFFFFF;
+		background-color: #324A5F;
+	}
+
+	#productbase .navbar-right { 
+		float: none;
+		margin-right: 0;	
+	}
+
+	#productbase ul.nav > li.active > a { 
+		color: #000000;
+		background: #CCC9DC;
+	}
+
+	#productbase ul.nav > li > a:hover { 
+		color: #000000;
+	}
+
+	/* centre the nav menu items */
+
+	#productbase ul.nav > li > a,
+	#productbase .dropdown-menu > li > a { 
+		text-align: center;
+		width: 100%;
+	}
+
+	#productbase ul.nav > li > a { 
+		color: #FFFFFF;
+	}
+
+}

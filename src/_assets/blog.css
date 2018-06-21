@@ -3,6 +3,11 @@
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
+div.container.blog { 
+	margin-bottom: 100px;
+}
+
 /**
  *	list items
 **/
@@ -10,7 +15,7 @@
 #productbase.blog div.container ul { 
 	color: #000000;
 	list-style-type: square;
-	padding-left: 20px;
+    padding-left: 30px;
 	margin: 0;
 }
 
