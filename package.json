@@ -18,6 +18,10 @@
 	"homepage": "https://github.com/julianbrowne/productbase#readme",
 	"dependencies": {},
 	"devDependencies": {
+		"gulp": "^3.9.1",
+		"gulp-clean-css": "^3.9.4",
+		"gulp-concat": "^2.6.1",
+		"gulp-rename": "^1.3.0",
 		"uglify-js": "^3.4.0",
 		"uglifycss": "0.0.29"
 	}
