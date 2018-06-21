@@ -11,10 +11,17 @@ For that, we've historically used the idea of a "project" - a collection of peop
 sometimes unclear mission, a project manager, a budget and usually an ambitious
 date to deliver by. It clashed with agile because usually too many things were
 fixed too early in the life-cycle, but smart organisations also noticed that
-projects tend to clash with each other in obstructive ways: they require the
-same people, have cross dependencies on each other, all want to go into 
-production at around the same time, fight each other for limited capital investment
-budgets and so on.
+projects tend to clash with each other:
+
+* they require the same people  
+
+* have technical dependencies on one other  
+
+* functional overlaps  
+
+* all want to go into production at around the same time  
+
+* fight each other for limited capital investment budgets  
 
 ## Projects are Dead; Long live Products
 
@@ -34,13 +41,13 @@ No more time lost to waiting for people to become free.
 enterprise projects is people join not really knowing what their objective is. Not only does that waste time but it's highly demotivating.
 
 *	**Customer Centric** - what, really, is the most most important thing in any delivery?
-The customer, obviously. Some would say sales revenue, and you get that from having more,
-or better, customers. Some would say efficiency, and you get the luxury to work on that
-if you have revenue from customers. Purpose? (comes from customers). Beat the competition? (steal their customers). It's all, directly or indirectly, about the customer. The problem with projects is it's often hard to work out who the customer is. Or, if it's the _actual_ customer, then many projects don't own enough of the end to end experience to really understand what good looks like. In a product team it's obvious. 
+The customer, obviously. Some would say sales revenue, and you get that from having more
+or better customers. Some would say efficiency, and you get the luxury to work on that
+if you have revenue from customers. Purpose? (comes from customers). Beat the competition? (steal their customers). It's all, directly or indirectly, about the customer. The problem with projects is it's often hard to work out who the customer is. Or, if it's the _actual_ customer, then many projects don't own enough of the end to end experience to really understand what good looks like. In a product team, it's obvious. 
 
-Companies that are mature in the product space are organising around products. And even
+Companies that are mature in the product space are organising around [products](https://www.thoughtworks.com/insights/blog/great-financial-services-companies-deliver-products-not-projects). And even
 creating funding models for them without the usual end of year crunch and squabble to
-work out which projects to fund. Strategy becomes easier too because it has to center around
+work out which projects to fund. Strategy becomes easier too because it has to centre around
 long term targets, the customers and the products they interact with.
 
 ## Product People
