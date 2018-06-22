@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120253082-1"></script>
+
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-120253082-1');		
+</script>
+
+    <link rel="icon" href="/favicon.ico?v=0.1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="productbase is a retained digital and executive talent acquisition services company working across agile, digital delivery, devops and product development">
+	<link rel="canonical" href="/" />
+	<title>home | productbase: retained digital talent acquisition</title>
+	
+<!--
+<link href="/css/normalize.min.css" rel="stylesheet">
+-->
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<script src="/vendor/jquery-3.3.1/jquery.min.js"></script>
+
+<link  href="/vendor/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<script async src="/vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+<!--
+<link href="/css/normalize.min.css" rel="stylesheet">
+<link href="/css/navbar.min.css" rel="stylesheet">
+-->
+
+<link href="/css/style.min.css" rel="stylesheet">
+
+</head>
+<body id="productbase">
+	<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="/people">people</a>
+				</li>
+				<li>
+					<a href="/clients">clients</a>
+				</li>
+				<li>
+					<a href="/services">services</a>
+				</li>
+				<li>
+					<a href="/blog">blog</a>
+				</li>
+				<li class="dropdown">
+					<a href="/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						about
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="/about/about-us">about us</a></li>
+						<li><a href="/about/contact">contact</a></li>
+						<li><a href="/about/legal">legal</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div><!-- /.container-fluid -->
+</nav>
+
+<script type="text/javascript">
+	$(function() { 
+
+		var currHref = $(location).attr("pathname");
+
+		if (currHref.endsWith("/")) { 
+			currHref = currHref.substring(0, currHref.length - 1);
+		}
+
+		function hrefRoot(href) { 
+			return "/" + href.split("/")[1]; 
+		};
+
+		var pageRoot = hrefRoot(currHref);
+
+		$("nav.navbar li a").each(function() { 
+
+			var linkHref = $(this).attr("href");
+			var linkRoot = hrefRoot(linkHref);
+
+			if(linkHref===currHref) { 
+				$(this).parent().addClass("active");
+			}
+			else { 
+				if(linkRoot===pageRoot) { 
+					$(this).parent().parent().parent().addClass("active");
+				}
+			}
+
+		});
+	});
+</script>
+
+	
+<h1 class="productbase-logo">
+	<strong>product</strong>base
+</h1>
+
+	<div class="container with-background bg4 full-height">
+		<p>Welcome to <strong>product</strong>base.</p>
+
+<p>The future of digital delivery is <a href="/blog/product-thinking.html">product-based</a> thinking.</p>
+
+<p>Smart organisations have been restructuring themselves around agile methods for some time. The next phase of lean adoption is product-first delivery, enabling giant leaps in capability as the confusion of an exclusively project-centered portfolio is left behind.</p>
+
+<p>Product organisations are agile, promote a devops or site-reliability culture, and invest their capital budgets in <em>products</em>, not projects.</p>
+
+<p>Productbase is an exclusive search organisation connected to the change makers in this new world. We curate a selective network of individuals who lead major programmes of modernisation and lean adoption. We provide just the right kind of product talent for fast growing tech businesses and large organisations who are looking to become agile or to take their agility to the next level.</p>
+
+<p>The founders of Productbase have built award winning teams for many of the most successful ventures in the market today. We understand the requirements of culture, experience, personality and talent companies need to be truly product led and customer centric.</p>
+
+	</div>
+	<footer class="footer navbar-fixed-bottom">
+		<div class="container">
+			<p class="text-muted text-center">
+				
+&copy; <strong>product</strong>base 
+
+<script>
+	var todaysDate = new Date();
+	var locale = "en-us";
+	var year = todaysDate.toLocaleString(locale, { year: "numeric" });
+	document.write(year);
+</script>
+
+			</p>
+		</div>
+	</footer>
+</body>
+</html>

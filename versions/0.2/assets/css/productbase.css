@@ -1,0 +1,75 @@
+
+:root {
+	--font-family-sans-serif: 'Raleway', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body { 
+	color: #39403a;
+	background: #f6fdf5;
+	padding-top: 100px;
+}
+
+h1, h2, h3 { 
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h3 { 
+	padding-bottom: 10px;
+	background: transparent;
+    border-bottom: solid 1px #DEDEDE;
+}
+
+@media screen and (max-width: 768px) {
+	body { padding-top: 0px; }
+}
+
+/** localisations **/
+
+.pb-client-logo { 
+	/*height: 100px;*/
+	text-align: center;
+	width: 100px;
+}
+
+.pb-page-container { 
+	min-height: 65vh;
+}
+
+/** bootstrap mods **/
+
+a { 
+	color: #1ba592de;
+}
+
+a:hover {
+  color: #49756fde;
+  text-decoration: underline;
+}
+
+.navbar-brand { 
+	font-size: 3rem;
+}
+
+.bg-dark {
+  background-color: #1B6157 !important;
+}
+
+.carousel-caption { 
+  background-color:rgba(152, 152, 152, 0.8);
+  border-radius: 25px;
+}
+
+.card {
+	margin: 10px;
+	width: 200px;
+}
+
+.card-body { 
+	margin-bottom: 0;
+}
+
+.card img { 
+	margin: 20px auto;
+	float: none;
+}

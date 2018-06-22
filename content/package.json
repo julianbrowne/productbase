@@ -1,0 +1,28 @@
+{
+	"name": "productbase",
+	"version": "1.0.0",
+	"description": "productbase jekyll web site generator",
+	"main": "index.html",
+	"scripts": { 
+
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/julianbrowne/productbase.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/julianbrowne/productbase/issues"
+	},
+	"homepage": "https://github.com/julianbrowne/productbase#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"gulp": "^3.9.1",
+		"gulp-clean-css": "^3.9.4",
+		"gulp-concat": "^2.6.1",
+		"gulp-rename": "^1.3.0",
+		"uglify-js": "^3.4.0",
+		"uglifycss": "0.0.29"
+	}
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120253082-1"></script>
+
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-120253082-1');		
+</script>
+
+    <link rel="icon" href="/favicon.ico?v=0.1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="productbase is a retained digital and executive talent acquisition services company working across agile, digital delivery, devops and product development">
+	<link rel="canonical" href="/blog/project-management.html" />
+	<title>product management | productbase</title>
+	<link href="/css/blog.min.css" rel="stylesheet">
+	
+<!--
+<link href="/css/normalize.min.css" rel="stylesheet">
+-->
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<script src="/vendor/jquery-3.3.1/jquery.min.js"></script>
+
+<link  href="/vendor/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<script async src="/vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+<!--
+<link href="/css/normalize.min.css" rel="stylesheet">
+<link href="/css/navbar.min.css" rel="stylesheet">
+-->
+
+<link href="/css/style.min.css" rel="stylesheet">
+
+</head>
+<body id="productbase" class="blog">
+	<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a class="navbar-brand" href="/">
+				<strong>product</strong>base
+			</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="/people">people</a>
+				</li>
+				<li>
+					<a href="/clients">clients</a>
+				</li>
+				<li>
+					<a href="/services">services</a>
+				</li>
+				<li>
+					<a href="/blog">blog</a>
+				</li>
+				<li class="dropdown">
+					<a href="/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						about
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="/about/about-us">about us</a></li>
+						<li><a href="/about/contact">contact</a></li>
+						<li><a href="/about/legal">legal</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div><!-- /.container-fluid -->
+</nav>
+
+<script type="text/javascript">
+	$(function() { 
+
+		var currHref = $(location).attr("pathname");
+
+		if (currHref.endsWith("/")) { 
+			currHref = currHref.substring(0, currHref.length - 1);
+		}
+
+		function hrefRoot(href) { 
+			return "/" + href.split("/")[1]; 
+		};
+
+		var pageRoot = hrefRoot(currHref);
+
+		$("nav.navbar li a").each(function() { 
+
+			var linkHref = $(this).attr("href");
+			var linkRoot = hrefRoot(linkHref);
+
+			if(linkHref===currHref) { 
+				$(this).parent().addClass("active");
+			}
+			else { 
+				if(linkRoot===pageRoot) { 
+					$(this).parent().parent().parent().addClass("active");
+				}
+			}
+
+		});
+	});
+</script>
+
+	<div class="container blog">
+		<h1 id="is-the-project-manager-dead">Is the Project Manager dead?</h1>
+
+<p>The role of the project manager has evolved substantially over the years and not always in the best direction. What was an important coordinating and communicating position has, in some companies, turned into a <a href="https://www.joelonsoftware.com/2006/08/08/the-command-and-control-management-method/">controlling</a> one. Many of the principles in the <a href="http://agilemanifesto.org/">Agile Manifesto</a> fought against these changes, which is why it’s no coincidence that many modern agile companies don’t hire project managers (they also do not typically hire a host of other indirect roles like architects and DBAs).</p>
+
+<p>However, poor instances aside, whenever a group of specialists get together to achieve an objective there will always be support work that needs to be done: people need to be paid, other people need to know whether things are going well or not. When a business funds some work, it has a right to know how the money is being spent and whether the original objectives of that work remain valid and achievable. These are reporting activities that could theoretically be done by anyone good at collating data and summarising in a way to facilitate decision-making. In <a href="http://gotocon.com/dl/goto-amsterdam-2011/slides/FredGeorge_ProgrammerAnarchy.pdf">Programmer Anarchy</a> it’s the software developers who do this. In most other approaches it’s been left to the project manager. But as companies switch to funding products, rather than projects, does that mean the project manager position disappears.</p>
+
+<p>Well, yes and no.</p>
+
+<p>Yes, because a <em>product</em> team is led principally by a Product Manager who owns both the deliverable and its affect on the world. What the team should do now and next is therefore coordinated by the Product Manager, possibly via one or more Product Owners. Who did what, who’s doing what next, and where the various obstacles lie is known to the team and can be reported succinctly to anyone interested. More importantly, risk and issue management becomes part of the daily discourse and not something debated on a fortnightly or monthly cycle.</p>
+
+<p>Ben Horowitz once described Product Managers as the <a href="https://a16z.com/2012/06/15/good-product-managerbad-product-manager/">CEO of the product</a>. He’s revised the view since but the point that a Product Manager should take broad ownership remains an important one. Many Product Manager responsibilities are subsumed into this remit.</p>
+
+<p>So is the role finished? Maybe not quite.</p>
+
+<p>If the whole point of agile was to free up the conversation between customers (either end consumers or product managers) and developers so that they could work in small iterations, design fractally, and prioritise talking openly over following a prescribed plan, then it follows that everyone around the team should enable and support that. If <a href="https://www.linkedin.com/pulse/agile-killing-architect-julian-browne">Software Architects</a> can do it then really anyone can.</p>
+
+<p>Any activity that can cost-effectively assist developers and product teams talk more, get more done, see more clearly is a good thing. Even a medium-sized team will generate a ton of administrative work: on-boarding of new people, facilities management, contractual negotiations, IT support liaison. Project Managers who recognise this and act accordingly will fit very well into this new world, not as controllers but in a key supporting role that supports organisational agility.</p>
+
+	</div>
+	<footer class="footer navbar-fixed-bottom">
+		<div class="container">
+			<p class="text-muted text-center">
+				
+&copy; <strong>product</strong>base 
+
+<script>
+	var todaysDate = new Date();
+	var locale = "en-us";
+	var year = todaysDate.toLocaleString(locale, { year: "numeric" });
+	document.write(year);
+</script>
+
+			</p>
+		</div>
+	</footer>
+</body>
+</html>

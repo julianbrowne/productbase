@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120253082-1"></script>
+
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-120253082-1');		
+</script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="productbase is a retained digital and executive talent acquisition services company working across agile, digital delivery, devops and product development">
+	<link rel="canonical" href="/blog/product-thinking.html" />
+	<title>product thinking | productbase</title>
+	<link href="/css/blog.min.css" rel="stylesheet">
+	
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<link href="/css/normalize.min.css" rel="stylesheet">
+
+<script src="/vendor/jquery-3.3.1/jquery.min.js"></script>
+
+<link  href="/vendor/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<script async src="/vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+<link href="/css/style.min.css" rel="stylesheet">
+
+</head>
+<body id="productbase" class="blog">
+	<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a class="navbar-brand" href="/">
+				home
+			</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="/people">people</a>
+				</li>
+				<li>
+					<a href="/clients">clients</a>
+				</li>
+				<li>
+					<a href="/services">services</a>
+				</li>
+				<li>
+					<a href="/blog">blog</a>
+				</li>
+				<li class="dropdown">
+					<a href="/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						about
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="/about/about-us">about us</a></li>
+						<li><a href="/about/contact">contact</a></li>
+						<li><a href="/about/legal">legal</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div><!-- /.container-fluid -->
+</nav>
+
+<script type="text/javascript">
+	$(function() { 
+
+		var currHref = $(location).attr("pathname");
+
+		if (currHref.endsWith("/")) { 
+			currHref = currHref.substring(0, currHref.length - 1);
+		}
+
+		function hrefRoot(href) { 
+			return "/" + href.split("/")[1]; 
+		};
+
+		var pageRoot = hrefRoot(currHref);
+
+		$("nav.navbar li a").each(function() { 
+
+			var linkHref = $(this).attr("href");
+			var linkRoot = hrefRoot(linkHref);
+
+			if(linkHref===currHref) { 
+				$(this).parent().addClass("active");
+			}
+			else { 
+				if(linkRoot===pageRoot) { 
+					$(this).parent().parent().parent().addClass("active");
+				}
+			}
+
+		});
+	});
+</script>
+
+	<div class="container blog">
+		<h1 id="product-thinking">Product Thinking</h1>
+
+<p>First there was the <a href="http://agilemanifesto.org/">agile manifesto</a>: a revolution in our ability to deliver customer value through software. Agile taught us to take small steps and constantly assess our progress against a sometimes moving target. The benefits were obvious, but the agile manifesto intentionally didn’t say anything about how to organise delivery teams in the context of a wider business.</p>
+
+<p>For that, we’ve historically used the idea of a “project” - a collection of people with a
+sometimes unclear mission, a project manager, a budget and usually an ambitious
+date to deliver by. It clashed with agile because usually too many things were
+fixed too early in the life-cycle, but smart organisations also noticed that
+projects tend to clash with each other:</p>
+
+<ul>
+  <li>
+    <p>they require the same people</p>
+  </li>
+  <li>
+    <p>have technical dependencies on one other</p>
+  </li>
+  <li>
+    <p>functional overlaps</p>
+  </li>
+  <li>
+    <p>all want to go into production at around the same time</p>
+  </li>
+  <li>
+    <p>fight each other for limited capital investment budgets</p>
+  </li>
+</ul>
+
+<h2 id="projects-are-dead-long-live-products">Projects are Dead; Long live Products</h2>
+
+<p>Organising a delivery portfolio around <strong>products</strong> instead of <em><a href="https://hackernoon.com/thinking-beyond-projects-71998e2524e7">projects</a></em> has
+major benefits:</p>
+
+<ul>
+  <li>
+    <p><strong>No Dependencies</strong> - the delivery team scope is the whole product, i.e. the
+thing that the customer will experience. This means any change on the web site,
+back-end, billing system, is owned by the team. No endless meetings about dependencies.</p>
+  </li>
+  <li>
+    <p><strong>Managed Resource Conflicts</strong> - of course specialist skills may still be
+required by multiple teams. But because a team manages their own scope, when they
+don’t have access to that resource they can work on the next most important thing. 
+No more time lost to waiting for people to become free.</p>
+  </li>
+  <li>
+    <p><strong>Speed</strong> - a team that has a clear mission moves faster. A large problem in
+enterprise projects is people join not really knowing what their objective is. Not only does that waste time but it’s highly demotivating.</p>
+  </li>
+  <li>
+    <p><strong>Customer Centric</strong> - what, really, is the most most important thing in any delivery?
+The customer, obviously. Some would say sales revenue, and you get that from having more
+or better customers. Some would say efficiency, and you get the luxury to work on that
+if you have revenue from customers. Purpose? (comes from customers). Beat the competition? (steal their customers). It’s all, directly or indirectly, about the customer. The problem with projects is it’s often hard to work out who the customer is. Or, if it’s the <em>actual</em> customer, then many projects don’t own enough of the end to end experience to really understand what good looks like. In a product team, it’s obvious.</p>
+  </li>
+</ul>
+
+<p>Companies that are mature in the product space are organising around <a href="https://www.thoughtworks.com/insights/blog/great-financial-services-companies-deliver-products-not-projects">products</a>. And even
+creating funding models for them without the usual end of year crunch and squabble to
+work out which projects to fund. Strategy becomes easier too because it has to centre around
+long term targets, the customers and the products they interact with.</p>
+
+<h2 id="product-people">Product People</h2>
+
+<p>Roles in product teams are still agile but holistically so. Product developers, analysts, and owners
+need to think in very customer-first terms, build requirements around tested hypotheses and
+constantly question where the next most valuable feature lies. It’s not a direct switch from
+project thinking and that’s why we at Productbase put so much effort into finding experienced
+delivery people who get it.</p>
+
+<p>If you’d like out find out more please drop us a line.</p>
+
+
+	</div>
+	<footer class="footer navbar-fixed-bottom">
+		<div class="container">
+			<p class="text-muted text-center">
+				
+&copy; productbase 
+
+<script>
+	var todaysDate = new Date();
+	var locale = "en-us";
+	var year = todaysDate.toLocaleString(locale, { year: "numeric" });
+	document.write(year);
+</script>
+
+			</p>
+		</div>
+	</footer>
+</body>
+</html>
